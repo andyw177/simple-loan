@@ -23,7 +23,7 @@ class LenderViewSet(viewsets.ModelViewSet):
     queryset = Lender.objects.all()
     serializer_class = LenderSerializer
     def get_queryset(self):
-        return Property.objects.all()
+        return Lender.objects.all()
        
 
 class PropertyViewSet(viewsets.ModelViewSet):
